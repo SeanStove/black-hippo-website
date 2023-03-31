@@ -235,7 +235,7 @@ export default function Home() {
           <Divider text="Cases" />
           <div className="py-40">
             <Swiper
-              slidesPerView={3}
+              slidesPerView={global.window?.innerWidth <= 768 ? 1 : 3}
               className="cases"
               modules={[Pagination, Navigation]}
               navigation={true}
@@ -253,7 +253,7 @@ export default function Home() {
                       alt="Ecoline Calculator applicatie"
                     />
                   </div>
-                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[400px] min-h-[450px] p-10 bg-white -top-10 relative z-10 ml-10">                   
+                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[400px] min-h-[450px] p-10 bg-white -top-10 relative z-10 ml-10">
                     <h4 className="text-lg text-secondary">Ecoline</h4>
                     <h3 className="text-2xl text-primary mb-8">
                       Calculator applicatie
@@ -630,6 +630,12 @@ export default function Home() {
               <input type="hidden" name="form-name" value="contact" />
               <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-8">
                 <div className="sm:col-span-8 border border-primary rounded-md relative px-6 pt-6 pb-4">
+                  <label
+                    htmlFor="name"
+                    className="absolute text-base text-primary top-[20px] px-2 bg-white left-4 -translate-y-8 peer-focus:-translate-y-8  transition-transform"
+                  >
+                    Naam *
+                  </label>
                   <input
                     type="text"
                     name="name"
@@ -637,14 +643,14 @@ export default function Home() {
                     className="w-full text-lg text-text outline-none rounded-md peer"
                     required
                   />
-                  <label
-                    htmlFor="name"
-                    className="absolute text-base text-primary top-[20px] px-2 bg-white left-4 -translate-y-8 peer-focus:-translate-y-8 pointer-events-none transition-transform"
-                  >
-                    Naam *
-                  </label>
                 </div>
                 <div className="sm:col-span-8 border border-primary rounded-md relative px-6 pt-6 pb-4">
+                  <label
+                    htmlFor="email"
+                    className="absolute text-base text-primary top-[20px] px-2 bg-white left-4 -translate-y-8 peer-focus:-translate-y-8 transition-transform"
+                  >
+                    Email *
+                  </label>
                   <input
                     type="email"
                     name="email"
@@ -652,14 +658,14 @@ export default function Home() {
                     className="w-full text-lg text-text outline-none rounded-md peer"
                     required
                   />
-                  <label
-                    htmlFor="Email"
-                    className="absolute text-base text-primary top-[20px] px-2 bg-white left-4 -translate-y-8 peer-focus:-translate-y-8 pointer-events-none transition-transform"
-                  >
-                    Email *
-                  </label>
                 </div>
                 <div className="sm:col-span-8 border border-primary rounded-md relative px-6 pt-6 pb-4">
+                  <label
+                    htmlFor="phone"
+                    className="absolute text-base text-primary top-[20px] px-2 bg-white left-4 -translate-y-8 peer-focus:-translate-y-8 transition-transform"
+                  >
+                    Telefoon *
+                  </label>
                   <input
                     type="text"
                     name="phone"
@@ -667,14 +673,14 @@ export default function Home() {
                     className="w-full text-lg text-text outline-none rounded-md peer"
                     required
                   />
-                  <label
-                    htmlFor="phone"
-                    className="absolute text-base text-primary top-[20px] px-2 bg-white left-4 -translate-y-8 peer-focus:-translate-y-8 pointer-events-none transition-transform"
-                  >
-                    Telefoon *
-                  </label>
                 </div>
                 <div className="sm:col-span-8 border border-primary rounded-md relative px-6 pt-6 pb-4">
+                  <label
+                    htmlFor="message"
+                    className="absolute text-base text-primary top-[20px] px-2 bg-white left-4 -translate-y-8 peer-focus:-translate-y-8 transition-transform"
+                  >
+                    Bericht *
+                  </label>
                   <textarea
                     name="message"
                     id="message"
@@ -682,12 +688,6 @@ export default function Home() {
                     required
                     rows={4}
                   />
-                  <label
-                    htmlFor="message"
-                    className="absolute text-base text-primary top-[20px] px-2 bg-white left-4 -translate-y-8 peer-focus:-translate-y-8 pointer-events-none transition-transform"
-                  >
-                    Bericht *
-                  </label>
                 </div>
                 <div className="sm:col-span-8">
                   <Text>

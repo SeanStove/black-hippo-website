@@ -23,7 +23,7 @@ export function Footer() {
               </div>
             </Link>
           </div>
-          <div className="w-full flex justify-between">
+          <div className="w-full lg:flex justify-between">
             <div>
               <h3 className="text-base font-bold mb-4 text-secondary">
                 Beveren
@@ -35,7 +35,7 @@ export function Footer() {
                 <li>BTW: BE 0742.699.306</li>
               </ul>
             </div>
-            <div>
+            <div className="mt-16 lg:mt-0">
               <h3 className="text-base font-bold mb-4 text-secondary">
                 Izegem
               </h3>
@@ -46,7 +46,7 @@ export function Footer() {
                 <li>BTW: BE 0742.699.306</li>
               </ul>
             </div>
-            <div>
+            <div className="mt-16 lg:mt-0">
               <h3 className="text-base font-bold mb-4 text-secondary">
                 Sitemap
               </h3>
@@ -62,7 +62,7 @@ export function Footer() {
                 })}
               </ul>
             </div>
-            <div>
+            <div className="mt-16 lg:mt-0">
               <h3 className="text-base font-bold mb-4 text-secondary">Legal</h3>
               <ul className="text-primary text-base leading-7">
                 <li>
