@@ -28,7 +28,7 @@ export default function Document() {
         />
         <meta property="og:image" content="https://blackhippo.be/logo.svg" />
       </Head>
-      <body className="overflow-x-hidden scroll-smooth">
+      <body className="overflow-x-hidden relative scroll-smooth">
         <Main />
         <NextScript />
       </body>
