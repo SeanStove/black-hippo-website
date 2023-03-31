@@ -48,7 +48,7 @@ export function Header() {
               </div>
             </Link>
             <nav>
-              <ul className="flex gap-x-10">
+              <ul className="flex gap-x-6 lg:gap-x-10">
                 {navigation.map((nav) => {
                   return (
                     <li key={nav.name}>

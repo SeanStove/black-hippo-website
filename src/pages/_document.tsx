@@ -5,7 +5,7 @@ import Script from "next/script";
 
 export default function Document() {
   return (
-    <Html lang="nl" className="scroll-smooth">
+    <Html lang="nl" className="overflow-x-hidden scroll-smooth">
       <Head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=UA-162764110-1"
