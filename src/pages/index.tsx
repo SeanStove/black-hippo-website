@@ -74,15 +74,13 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="mt-12 lg:mt-0 md:ml-10 shadow-lg w-[320px] lg:w-[520px] h-[315px]">
-              <iframe
-                className="w-[320px] lg:w-[520px] h-[315px]"
-                src="https://www.youtube.com/embed/D2kn8sPXp5A"
-                title="YouTube video player"
-                frameBorder={0}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+            <div className="mt-12 lg:mt-0 md:ml-10 shadow-lg aspect-video">
+              <video controls className="w-full h-full">
+                <source
+                  src="https://dl.dropboxusercontent.com/s/flpdifjdcaobmmk/video.mp4?dl=0"
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </div>
         </Container>
