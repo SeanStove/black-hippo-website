@@ -5,8 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useWindowDimensions } from "@/hooks/usewindowdimensions";
 
 export default function Home() {
+  const { width } = useWindowDimensions();
+
   return (
     <>
       <Head>
@@ -20,17 +23,17 @@ export default function Home() {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
-      <section className="mb-44" id="heading">
+      <section className="mb-24 lg:mb-44" id="heading">
         <Container>
           <div className="mb-16">
-            <h1 className="text-6xl lg:text-8xl leading-none">
+            <h1 className="text-5xl lg:text-8xl leading-none">
               <span className="text-primary">Massive ideas</span>
               <br />
               <span className="text-secondary">Lightweight solutions</span>
             </h1>
           </div>
-          <div className="ml-20 max-w-[400px]">
-            <div className=" mb-20">
+          <div className="md:ml-20 max-w-[400px]">
+            <div className="mb-20">
               <Text>
                 Wil je jouw bedrijfsprocessen optimaliseren en duurzame groei
                 realiseren?
@@ -60,7 +63,7 @@ export default function Home() {
           />
         </div>
         <Container className="mb-16">
-          <Divider text="EXPERTISE" />
+          <Divider text="Expertise" />
           <div className="my-20 mx-auto max-w-4xl">
             <Title className="text-center">
               We helpen onze klanten om hun doelen te bereiken
@@ -76,7 +79,7 @@ export default function Home() {
                   alt="Software Development"
                 />
               </div>
-              <div className="max-w-[200px]">
+              <div className="md:max-w-[200px]">
                 <p className="text-base color-secondary mb-2">01</p>
                 <h3 className="text-2xl text-primary mb-4">
                   Software Development
@@ -97,7 +100,7 @@ export default function Home() {
                   alt="DevOps & Cloud"
                 />
               </div>
-              <div className="max-w-[170px]">
+              <div className="md:max-w-[170px]">
                 <p className="text-base color-secondary mb-2">02</p>
                 <h3 className="text-2xl text-primary mb-4">DevOps & Cloud</h3>
                 <Text>
@@ -115,7 +118,7 @@ export default function Home() {
                   alt="IoT Development"
                 />
               </div>
-              <div className="max-w-[180px]">
+              <div className="md:max-w-[180px]">
                 <p className="text-base color-secondary mb-2">03</p>
                 <h3 className="text-2xl text-primary mb-4">IoT Development</h3>
                 <Text>
@@ -135,7 +138,7 @@ export default function Home() {
                   alt="Cloud Enablement"
                 />
               </div>
-              <div className="max-w-[200px]">
+              <div className="md:max-w-[200px]">
                 <p className="text-base color-secondary mb-2">04</p>
                 <h3 className="text-2xl text-primary mb-4">Cloud Enablement</h3>
                 <Text>
@@ -154,7 +157,7 @@ export default function Home() {
                   alt="Consulting Service"
                 />
               </div>
-              <div className="max-w-[200px]">
+              <div className="md:max-w-[200px]">
                 <p className="text-base color-secondary mb-2">05</p>
                 <h3 className="text-2xl text-primary mb-4">
                   Consulting Service
@@ -233,9 +236,9 @@ export default function Home() {
         <div className="absolute -top-[1100px] -left-[1000px] -z-10"></div>
         <Container>
           <Divider text="Cases" />
-          <div className="py-40">
+          <div className="py-20 md:py-40">
             <Swiper
-              slidesPerView={global.window?.innerWidth <= 768 ? 1 : 3}
+              slidesPerView={width <= 768 ? 1 : width <= 1024 ? 2 : 3}
               className="cases"
               modules={[Pagination, Navigation]}
               navigation={true}
@@ -253,7 +256,7 @@ export default function Home() {
                       alt="Ecoline Calculator applicatie"
                     />
                   </div>
-                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[400px] min-h-[450px] p-10 bg-white -top-10 relative z-10 ml-10">
+                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[280px] lg:w-[400px] min-h-[450px] pr-5 md:pr-10 md:pl-10 py-10 bg-white -top-10 relative z-10 ml-10">
                     <h4 className="text-lg text-secondary">Ecoline</h4>
                     <h3 className="text-2xl text-primary mb-8">
                       Calculator applicatie
@@ -281,7 +284,7 @@ export default function Home() {
                       alt="Jolipa Supplier portal"
                     />
                   </div>
-                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[400px] min-h-[450px] p-10 bg-white -top-10 relative z-10 ml-10">
+                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[280px] lg:w-[400px] min-h-[450px] pr-5 md:pr-10 md:pl-10 py-10 bg-white -top-10 relative z-10 ml-10">
                     <h4 className="text-lg text-secondary">Jolipa</h4>
                     <h3 className="text-2xl text-primary mb-8">
                       Supplier portal
@@ -307,7 +310,7 @@ export default function Home() {
                       alt="Organi Analytics & monitoring"
                     />
                   </div>
-                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[400px] min-h-[450px] p-10 bg-white -top-10 relative z-10 ml-10">
+                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[280px] lg:w-[400px] min-h-[450px] pr-5 md:pr-10 md:pl-10 py-10 bg-white -top-10 relative z-10 ml-10">
                     <h4 className="text-lg text-secondary">Organi</h4>
                     <h3 className="text-2xl text-primary mb-8">
                       End-to-end zicht op prestaties van applicatielandschap
@@ -332,7 +335,7 @@ export default function Home() {
                       alt="Chinoh case"
                     />
                   </div>
-                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[400px] min-h-[450px] p-10 bg-white -top-10 relative z-10 ml-10">
+                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[280px] lg:w-[400px] min-h-[450px] pr-5 md:pr-10 md:pl-10 py-10 bg-white -top-10 relative z-10 ml-10">
                     <h4 className="text-lg text-secondary">Chinoh</h4>
                     <h3 className="text-2xl text-primary mb-8">
                       Gecentraliseerde rapportering voor adequate analyse
@@ -357,7 +360,7 @@ export default function Home() {
                       alt="SmartWithFood"
                     />
                   </div>
-                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[400px] min-h-[450px] p-10 bg-white -top-10 relative z-10 ml-10">
+                  <div className="transition-shadow group-hover:shadow-primary group-hover:shadow-xl w-[280px] lg:w-[400px] min-h-[450px] pr-5 md:pr-10 md:pl-10 py-10 bg-white -top-10 relative z-10 ml-10">
                     <h4 className="text-lg text-secondary">SmartWithFood</h4>
                     <h3 className="text-2xl text-primary mb-8">
                       Van start-up naar scale-up: het nut van structuur en
@@ -380,7 +383,7 @@ export default function Home() {
 
       <section id="reviews">
         <Container>
-          <Divider text="KLANTEN & REVIEWS" />
+          <Divider text="Klanten & reviews" />
           <div className="py-12">
             <Swiper
               className="reviews"
@@ -391,15 +394,15 @@ export default function Home() {
               navigation={true}
             >
               <SwiperSlide>
-                <div className="w-full h-[600px]">
-                  <div className="max-w-[1000px] mx-auto">
-                    <p className="text-center mb-16  text-secondary italic text-5xl">
+                <div className="w-full lg:h-[600px]">
+                  <div className="max-w-[300px] md:max-w-[1000px] mx-auto">
+                    <p className="text-center mb-16  text-secondary italic text-xl md:text-5xl">
                       &quot;Black Hippo slaagt erin om de verschillende
                       cloudcomponenten te integreren tot 1 werkende
                       architectuur, met een heel sterk security-beleid&quot;
                     </p>
                   </div>
-                  <div className="max-w-[700px] mx-auto">
+                  <div className="max-w-[300px] md:max-w-[700px] mx-auto">
                     <Text className="text-center mb-2">
                       &quot;Tom heeft enorm veel ervaring in cloudomgevingen.
                       Hij slaagt erin om de verschillende cloudcomponenten te
@@ -423,15 +426,15 @@ export default function Home() {
               </SwiperSlide>
               <SwiperSlide>
                 <div>
-                  <div className="max-w-[1000px] mx-auto">
-                    <p className="text-center mb-16 italic text-secondary text-5xl">
+                  <div className="max-w-[300px] md:max-w-[1000px] mx-auto">
+                    <p className="text-center mb-16 italic text-secondary text-xl md:text-5xl">
                       {/* eslint-disable-next-line react/no-unescaped-entities */}
                       &quot;De maturiteit en expertise die Black Hippo
                       aanbrengt, zijn cruciaal voor het slagen van onze software
                       implementatie&quot;
                     </p>
                   </div>
-                  <div className="max-w-[700px] mx-auto">
+                  <div className="max-w-[300px] md:max-w-[700px] mx-auto">
                     <Text className="text-center mb-2">
                       &quot;Marjan brengt de nodige structuur en dynamiek in het
                       bedrijf&quot;, licht Sabbe toe. &quot;We bespraken
@@ -453,8 +456,8 @@ export default function Home() {
               </SwiperSlide>
               <SwiperSlide>
                 <div>
-                  <div className="max-w-[1000px] mx-auto">
-                    <p className="text-center mb-16 italic text-secondary text-5xl">
+                  <div className="max-w-[300px] md:max-w-[1000px] mx-auto">
+                    <p className="text-center mb-16 italic text-secondary text-xl md:text-5xl">
                       {/* eslint-disable-next-line react/no-unescaped-entities */}
                       &quot;Zonder Black Hippo had GemOne een kritisch project
                       niet kunnen realiseren. Ze is de juiste persoon op de
@@ -462,7 +465,7 @@ export default function Home() {
                       en aanpak.&quot;
                     </p>
                   </div>
-                  <div className="max-w-[700px] mx-auto">
+                  <div className="max-w-[300px] md:max-w-[700px] mx-auto">
                     <Text className="text-center mb-2">
                       &quot;Begin 2021 startte Marjan bij GemOne, initieel als
                       leider van een productteam. Na een maand vroegen we haar
@@ -495,7 +498,7 @@ export default function Home() {
             alt="bg"
           />
         </div>
-        <Container className="pb-32">
+        <Container className="mb:16 md:pb-32">
           <div className="py-24">
             <Swiper
               slidesPerView={3}
