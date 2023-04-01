@@ -32,44 +32,57 @@ export default function Home() {
               <span className="text-secondary">Lightweight solutions</span>
             </h1>
           </div>
-          <div className="md:ml-20 max-w-[400px]">
-            <div className="mb-20">
+          <div className="lg:flex">
+            <div className="md:ml-10 max-w-[400px]">
+              <div className="mb-20">
+                <Text>
+                  Wil je jouw bedrijfsprocessen optimaliseren en duurzame groei
+                  realiseren?
+                  <br />
+                  <br />
+                  Ons team bij Black Hippo heeft de expertise in digitalisatie,
+                  innovatie en softwareontwikkeling om je daarbij te helpen. Met
+                  gespecialiseerde kennis op het gebied van Supply Chain
+                  begeleiden we je graag door de complexiteit van het huidig IT
+                  landschap.
+                </Text>
+              </div>
               <Text>
-                Wil je jouw bedrijfsprocessen optimaliseren en duurzame groei
-                realiseren?
-                <br />
-                <br />
-                Ons team bij Black Hippo heeft de expertise in digitalisatie,
-                innovatie en softwareontwikkeling om je daarbij te helpen. Met
-                gespecialiseerde kennis op het gebied van Supply Chain
-                begeleiden we je graag door de complexiteit van het huidig IT
-                landschap.
+                Geïnteresseerd in een eenvoudige oplossing met snelle
+                resultaten?
               </Text>
-            </div>
-            <Text>
-              Geïnteresseerd in een eenvoudige oplossing met snelle resultaten?
-            </Text>
-            <div className="mt-4">
-              <a
-                href="/#cases"
-                className="inline bg-primary text-white text-base py-2 px-10 rounded-3xl hover:bg-secondary transition-colors"
-              >
-                Check onze cases
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="inline w-6 h-6 ml-2 text-white fill-current"
+              <div className="mt-4">
+                <a
+                  href="/#cases"
+                  className="inline bg-primary text-white text-base py-2 px-10 rounded-3xl hover:bg-secondary transition-colors"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                  />
-                </svg>
-              </a>
+                  Check onze cases
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="inline w-6 h-6 ml-2 text-white fill-current"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className="mt-12 lg:mt-0 md:ml-10 shadow-lg w-[320px] lg:w-[520px] h-[315px]">
+              <iframe
+                className="w-[320px] lg:w-[520px] h-[315px]"
+                src="https://www.youtube.com/embed/D2kn8sPXp5A"
+                title="YouTube video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </Container>
