@@ -41,7 +41,7 @@ export function Footer() {
               </h3>
               <ul className="text-primary text-base leading-7">
                 <li>Odiel spruyttestraat 2</li>
-                <li>8700 Izegem</li>
+                <li>8870 Izegem</li>
                 <li>info@blackhippo.be</li>
                 <li>BTW: BE 0742.699.306</li>
               </ul>
