@@ -653,6 +653,26 @@ export default function Home() {
         <Container>
           <Divider text="Contact" />
           <Title className="text-center mt-24">Contacteer ons</Title>
+
+          <div className="mx-auto mt-12 max-w-xl">
+            Stuur een mailtje naar{" "}
+            <Link
+              href="mailto:info@blackhippo.be"
+              className="underline focus:outline-none"
+            >
+              info@blackhippo.be
+            </Link>
+            <div>
+              Of bel ons rechtstreeks op het nummer{" "}
+              <Link
+                href="tel:+32474898016"
+                className="underline focus:outline-none"
+              >
+                0474 898 016
+              </Link>
+            </div>
+          </div>
+
           <div>
             <form
               name="contact"
