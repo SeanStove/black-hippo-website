@@ -52,7 +52,7 @@ export default function Home() {
                 resultaten?
               </Text>
               <div className="mt-4">
-                <a
+                <Link
                   href="/#cases"
                   className="inline bg-primary text-white text-base py-2 px-10 rounded-3xl hover:bg-secondary transition-colors"
                 >
@@ -71,7 +71,7 @@ export default function Home() {
                       d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mt-12 lg:mt-0 md:ml-10 shadow-lg w-[320px] lg:w-[520px] h-[315px]">

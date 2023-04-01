@@ -52,12 +52,12 @@ export function Header() {
                 {navigation.map((nav) => {
                   return (
                     <li key={nav.name}>
-                      <a
+                      <Link
                         className="inline-flex text-base text-black hover:underline py-5"
                         href={nav.link}
                       >
                         {nav.name}
-                      </a>
+                      </Link>
                     </li>
                   );
                 })}
