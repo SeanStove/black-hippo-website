@@ -48,8 +48,29 @@ export default function Home() {
             </div>
             <Text>
               Geïnteresseerd in een eenvoudige oplossing met snelle resultaten?
-              Check onze cases
             </Text>
+            <div className="mt-4">
+              <a
+                href="/#cases"
+                className="inline bg-primary text-white text-base py-2 px-10 rounded-3xl hover:bg-secondary transition-colors"
+              >
+                Check onze cases
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="inline w-6 h-6 ml-2 text-white fill-current"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </Container>
       </section>
@@ -238,7 +259,7 @@ export default function Home() {
           <Divider text="Cases" />
           <div className="py-20 md:py-40">
             <Swiper
-              slidesPerView={width <= 768 ? 1 : width <= 1024 ? 2 : 3}
+              slidesPerView={width <= 920 ? 1 : width <= 1200 ? 2 : 3}
               className="cases"
               modules={[Pagination, Navigation]}
               navigation={true}
@@ -384,7 +405,7 @@ export default function Home() {
       <section id="reviews">
         <Container>
           <Divider text="Klanten & reviews" />
-          <div className="py-12">
+          <div className="py-16">
             <Swiper
               className="reviews"
               pagination={{
@@ -396,15 +417,15 @@ export default function Home() {
               <SwiperSlide>
                 <div className="w-full lg:h-[600px]">
                   <div className="max-w-[300px] md:max-w-[1000px] mx-auto">
-                    <p className="text-center mb-16  text-secondary italic text-xl md:text-5xl">
-                      &quot;Black Hippo slaagt erin om de verschillende
+                    <p className="text-center mb-12 md:mb-16 text-secondary italic text-2xl md:text-5xl">
+                      &ldquo;Black Hippo slaagt erin om de verschillende
                       cloudcomponenten te integreren tot 1 werkende
-                      architectuur, met een heel sterk security-beleid&quot;
+                      architectuur, met een heel sterk security-beleid&rdquo;
                     </p>
                   </div>
                   <div className="max-w-[300px] md:max-w-[700px] mx-auto">
                     <Text className="text-center mb-2">
-                      &quot;Tom heeft enorm veel ervaring in cloudomgevingen.
+                      &ldquo;Tom heeft enorm veel ervaring in cloudomgevingen.
                       Hij slaagt erin om de verschillende cloudcomponenten te
                       integreren tot 1 werkende architectuur, met een heel sterk
                       security-beleid zowel op het vlak van data als van de
@@ -416,7 +437,7 @@ export default function Home() {
                       beveiliging ervan zijn minstens even belangrijk. Het
                       totaalplaatje moet kloppen. Ook de manier waarop we
                       software ontwikkelen tracht hij voortdurend te
-                      verbeteren.&quot;
+                      verbeteren.&rdquo;
                     </Text>
                   </div>
                   <p className="text-center text-lg  font-bold mb-2 uppercase">
@@ -427,17 +448,17 @@ export default function Home() {
               <SwiperSlide>
                 <div>
                   <div className="max-w-[300px] md:max-w-[1000px] mx-auto">
-                    <p className="text-center mb-16 italic text-secondary text-xl md:text-5xl">
+                    <p className="text-center mb-12 md:mb-16 italic text-secondary text-2xl md:text-5xl">
                       {/* eslint-disable-next-line react/no-unescaped-entities */}
-                      &quot;De maturiteit en expertise die Black Hippo
+                      &ldquo;De maturiteit en expertise die Black Hippo
                       aanbrengt, zijn cruciaal voor het slagen van onze software
-                      implementatie&quot;
+                      implementatie&rdquo;
                     </p>
                   </div>
                   <div className="max-w-[300px] md:max-w-[700px] mx-auto">
                     <Text className="text-center mb-2">
-                      &quot;Marjan brengt de nodige structuur en dynamiek in het
-                      bedrijf&quot;, licht Sabbe toe. &quot;We bespraken
+                      &ldquo;Marjan brengt de nodige structuur en dynamiek in
+                      het bedrijf&rdquo;, licht Sabbe toe. &ldquo;We bespraken
                       dagelijks de stand van zaken en zaten tweewekelijks samen
                       met de stakeholders om de gedetailleerde planning voor de
                       volgende weken te overlopen. Hierbij schuwde ze ook de
@@ -446,7 +467,7 @@ export default function Home() {
                       haarscherp en ze omschrijft alles heel duidelijk, zodat
                       iedereen in het team begrijpt wat moet gebeuren. Met haar
                       maturiteit en uitgebreide kennis is ze absoluut een
-                      toegevoegde waarde voor ons bedrijf.&quot;
+                      toegevoegde waarde voor ons bedrijf.&rdquo;
                     </Text>
                   </div>
                   <p className="text-center text-lg text-secondary font-bold mb-2 uppercase">
@@ -457,17 +478,17 @@ export default function Home() {
               <SwiperSlide>
                 <div>
                   <div className="max-w-[300px] md:max-w-[1000px] mx-auto">
-                    <p className="text-center mb-16 italic text-secondary text-xl md:text-5xl">
+                    <p className="text-center mb-12 md:mb-16 italic text-secondary text-2xl md:text-5xl">
                       {/* eslint-disable-next-line react/no-unescaped-entities */}
-                      &quot;Zonder Black Hippo had GemOne een kritisch project
+                      &ldquo;Zonder Black Hippo had GemOne een kritisch project
                       niet kunnen realiseren. Ze is de juiste persoon op de
                       juiste plaats, met een heel heldere, gestructureerde visie
-                      en aanpak.&quot;
+                      en aanpak.&rdquo;
                     </p>
                   </div>
                   <div className="max-w-[300px] md:max-w-[700px] mx-auto">
                     <Text className="text-center mb-2">
-                      &quot;Begin 2021 startte Marjan bij GemOne, initieel als
+                      &ldquo;Begin 2021 startte Marjan bij GemOne, initieel als
                       leider van een productteam. Na een maand vroegen we haar
                       of ze de rol van Chief Product Officer wilde opnemen. Zo
                       kreeg ze ineens 50 medewerkers onder zich. Marjan
@@ -476,7 +497,7 @@ export default function Home() {
                       communicatielijnen op. Zo verhoogde ze de efficiëntie en
                       veranderde ze de manier van werken naar een meer
                       prestatiegerichte aanpak. Ze geeft de mensen het nodige
-                      duwtje in de rug, zonder te ver te gaan&quot;
+                      duwtje in de rug, zonder te ver te gaan&rdquo;
                     </Text>
                   </div>
                   <p className="text-center text-lg text-secondary font-bold mb-2 uppercase">
