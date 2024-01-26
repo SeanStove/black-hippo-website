@@ -1,12 +1,13 @@
-import React from "react";
-const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["300", "400", "700"] });
+import { Footer, Header } from "@/components";
 
-import { Header, Footer } from "@/components";
-import { Ubuntu } from "next/font/google";
+import { Inter } from "next/font/google";
+import React from "react";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={ubuntu.className}>
+    <div className={inter.className}>
       <Header />
       <main>{children}</main>
       <Footer />
