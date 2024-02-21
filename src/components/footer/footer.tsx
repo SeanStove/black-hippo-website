@@ -1,4 +1,4 @@
-import { Container, CookieConsent, navigation } from "@/components";
+import { Container, navigation } from "@/components";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -76,9 +76,11 @@ export function Footer() {
               </ul>
             </div>
           </div>
+          <div className="mt-12 text-slate-400 text-center text-sm">
+            We value your privacy and use privacy-friendly tracking
+          </div>
         </Container>
       </footer>
-      <CookieConsent />
     </>
   );
 }

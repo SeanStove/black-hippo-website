@@ -1,25 +1,13 @@
 import { Head, Html, Main, NextScript } from "next/document";
 
+import PlausibleProvider from "next-plausible";
 import React from "react";
-import Script from "next/script";
 
 export default function Document() {
   return (
     <Html lang="nl" className="overflow-x-hidden scroll-smooth">
       <Head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=UA-162764110-1"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-162764110-1');
-        `}
-        </Script>
+        <PlausibleProvider domain="blackhippo.be" />
         <meta property="og:title" content="Black hippo: Software development" />
         <meta property="og:url" content="https://blackhippo.be" />
         <meta
