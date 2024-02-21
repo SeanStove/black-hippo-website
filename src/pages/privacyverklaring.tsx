@@ -365,18 +365,7 @@ export default function PrivacyVerklaring() {
                 websites omgaan door anoniem informatie te verzamelen en te
                 rapporteren. De belangrijkste functie van een prestatiecookie is
                 het meten en monitoren van de activiteit van de bezoeker van de
-                site. Een prestatiecookie helpt bij het genereren van
-                statistieken en wordt gebruikt door webmasters die Google
-                Analytics gebruiken voor het bijhouden en analyseren van online
-                activiteiten op hun website.
-              </p>
-              <h3 className="text-md font-bold mt-4">Marketing cookies</h3>
-              <p>
-                Deze bevatten een unieke sleutel die in staat zijn om de
-                zoekpatronen van individuele bezoekers te onderscheiden, of
-                kunnen een code bevatten die kan worden omgezet in een reeks
-                surfgewoontes of informatie over gebruiksvoorkeuren, die elders
-                worden opgeslagen.
+                site.
               </p>
 
               <p className="mt-4">
@@ -384,28 +373,23 @@ export default function PrivacyVerklaring() {
               </p>
               <ul className="mt-4 list-disc mx-8">
                 <li>
-                  <span className="font-bold"> Google Analytics</span>: BHO
-                  werkt enkel met geanonimiseerde IP-adressen in het kader van
-                  Google Analytics. U kan meer te weten komen over hoe Google uw
-                  gegevens gebruikt via{" "}
+                  <span className="font-bold"> Plausible Analytics</span>: BHO
+                  werkt met Plausible Analytics. Alle data wordt anoniem
+                  verzameld waardoor er geen cookie consent nodig is. U kan meer
+                  te weten komen over hoe Plausible uw gegevens gebruikt via{" "}
                   <a
-                    href="http://www.google.com/analytics"
+                    href="https://plausible.io"
                     className="font-bold underline"
                   >
-                    www.google.com/analytics
+                    https://plausible.io
                   </a>{" "}
                   en{" "}
                   <a
-                    href="http://www.google.com/policies/privacy/partners"
+                    href="https://plausible.io/privacy-focused-web-analytics"
                     className="font-bold underline"
                   >
-                    www.google.com/policies/privacy/partners
+                    https://plausible.io/privacy-focused-web-analytics
                   </a>
-                </li>
-                <li>
-                  <span className="font-bold">HotJar (analytics)</span>: BHO
-                  gebruikt Hotjar om de gebruikerservaring te meten en te
-                  begrijpen. Bezoek de website van HotJar voor meer informatie.
                 </li>
               </ul>
               <p className="mt-4">
