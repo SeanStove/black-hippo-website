@@ -77,7 +77,7 @@ export function Footer() {
             </div>
           </div>
           <div className="mt-12 text-slate-400 text-center text-sm">
-            We value your privacy and use privacy-friendly tracking
+            We value your privacy and use privacy-friendly analytics
           </div>
         </Container>
       </footer>
