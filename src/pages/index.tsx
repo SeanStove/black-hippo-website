@@ -306,7 +306,7 @@ export default function Home() {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="group">
                   <div className="rounded-xl overflow-hidden inline-flex">
                     <Image
@@ -331,7 +331,7 @@ export default function Home() {
                     </Text>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <SwiperSlide>
                 <div className="group">
                   <div className="rounded-xl overflow-hidden inline-flex">
