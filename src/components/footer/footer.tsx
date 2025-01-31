@@ -24,17 +24,6 @@ export function Footer() {
             </Link>
           </div>
           <div className="w-full lg:flex justify-between">
-            <div>
-              <h3 className="text-base font-bold mb-4 text-secondary">
-                Beveren
-              </h3>
-              <ul className="text-primary text-base leading-7">
-                <li>Kruisstraat 7</li>
-                <li>9120 Beveren</li>
-                <li>info@blackhippo.be</li>
-                <li>BTW: BE 0742.699.306</li>
-              </ul>
-            </div>
             <div className="mt-16 lg:mt-0">
               <h3 className="text-base font-bold mb-4 text-secondary">
                 Izegem
@@ -46,7 +35,7 @@ export function Footer() {
                 <li>BTW: BE 0742.699.306</li>
               </ul>
             </div>
-            <div className="mt-16 lg:mt-0">
+            <div className="mt-16 lg:mt-0 w-[120px]">
               <h3 className="text-base font-bold mb-4 text-secondary">
                 Sitemap
               </h3>

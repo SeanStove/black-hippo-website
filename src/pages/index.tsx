@@ -101,7 +101,7 @@ export default function Home() {
               We helpen onze klanten om hun doelen te bereiken
             </Title>
           </div>
-          <ul className="sm:flex flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-x-8 mt-20">
+          <ul className="sm:flex flex-wrap lg:flex-nowrap justify-center gap-x-14 mt-20">
             <li className="mb-20">
               <div className="h-[180px] flex items-end mb-4">
                 <Image
@@ -111,7 +111,7 @@ export default function Home() {
                   alt="Software Development"
                 />
               </div>
-              <div className="md:max-w-[200px]">
+              <div className="max-w-[200px] lg:max-w-[400px] ">
                 <p className="text-base color-secondary mb-2">01</p>
                 <h3 className="text-2xl text-primary mb-4">
                   Software Development
@@ -126,71 +126,14 @@ export default function Home() {
             <li className="mb-20">
               <div className="h-[180px] flex items-end mb-4">
                 <Image
-                  width={150}
-                  height={161}
-                  src="/assets/devops-cloud.svg"
-                  alt="DevOps & Cloud"
-                />
-              </div>
-              <div className="md:max-w-[170px]">
-                <p className="text-base color-secondary mb-2">02</p>
-                <h3 className="text-2xl text-primary mb-4">DevOps & Cloud</h3>
-                <Text>
-                  Continue integratie en oplevering van softwareoplossingen,
-                  gecombineerd met proactieve monitoring
-                </Text>
-              </div>
-            </li>
-            <li className="mb-20">
-              <div className="h-[180px] flex items-end mb-4">
-                <Image
-                  width={194}
-                  height={137}
-                  src="/assets/iot-development.svg"
-                  alt="IoT Development"
-                />
-              </div>
-              <div className="md:max-w-[180px]">
-                <p className="text-base color-secondary mb-2">03</p>
-                <h3 className="text-2xl text-primary mb-4">IoT Development</h3>
-                <Text>
-                  Met onze expertise op het gebied van IoT-architectuur,
-                  integraties, data-analyse en meer, kunnen we u helpen data
-                  inzichtelijk te maken om zo bedrijfsprocessen krachtig bij te
-                  sturen.
-                </Text>
-              </div>
-            </li>
-            <li className="mb-20">
-              <div className="h-[180px] flex items-end mb-4">
-                <Image
-                  width={169}
-                  height={155}
-                  src="/assets/cloud-enablement.svg"
-                  alt="Cloud Enablement"
-                />
-              </div>
-              <div className="md:max-w-[200px]">
-                <p className="text-base color-secondary mb-2">04</p>
-                <h3 className="text-2xl text-primary mb-4">Cloud Enablement</h3>
-                <Text>
-                  Wij bieden deskundig advies om u te helpen uw applicaties naar
-                  de cloud te migreren, beheren en optimaliseren waardoor het
-                  volledig potentieel van cloud computing wordt benut.
-                </Text>
-              </div>
-            </li>
-            <li className="mb-20">
-              <div className="h-[180px] flex items-end mb-4">
-                <Image
                   width={130}
                   height={179}
                   src="/assets/consulting-service.svg"
                   alt="Consulting Service"
                 />
               </div>
-              <div className="md:max-w-[200px]">
-                <p className="text-base color-secondary mb-2">05</p>
+              <div className="max-w-[200px] lg:max-w-[400px]">
+                <p className="text-base color-secondary mb-2">02</p>
                 <h3 className="text-2xl text-primary mb-4">
                   Consulting Service
                 </h3>
@@ -426,37 +369,6 @@ export default function Home() {
               navigation={true}
             >
               <SwiperSlide>
-                <div className="w-full lg:h-[600px]">
-                  <div className="max-w-[300px] md:max-w-[1000px] mx-auto">
-                    <p className="text-center mb-12 md:mb-16 text-secondary italic text-2xl md:text-5xl">
-                      &ldquo;Black Hippo slaagt erin om de verschillende
-                      cloudcomponenten te integreren tot 1 werkende
-                      architectuur, met een heel sterk security-beleid&rdquo;
-                    </p>
-                  </div>
-                  <div className="max-w-[300px] md:max-w-[700px] mx-auto">
-                    <Text className="text-center mb-2">
-                      &ldquo;Tom heeft enorm veel ervaring in cloudomgevingen.
-                      Hij slaagt erin om de verschillende cloudcomponenten te
-                      integreren tot 1 werkende architectuur, met een heel sterk
-                      security-beleid zowel op het vlak van data als van de
-                      applicatie zelf. Tom leert continu bij en is op de hoogte
-                      van de nieuwste technologische ontwikkelingen. Hij legt de
-                      lat zeer hoog, voor zichzelf en voor de software die we
-                      opleveren. Voor Tom is software meer dan de gevraagde
-                      functionaliteit alleen. De kwaliteit, performantie en
-                      beveiliging ervan zijn minstens even belangrijk. Het
-                      totaalplaatje moet kloppen. Ook de manier waarop we
-                      software ontwikkelen tracht hij voortdurend te
-                      verbeteren.&rdquo;
-                    </Text>
-                  </div>
-                  <p className="text-center text-lg  font-bold mb-2 uppercase">
-                    Kalman Tiboldi - CTO GemOne
-                  </p>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
                 <div>
                   <div className="max-w-[300px] md:max-w-[1000px] mx-auto">
                     <p className="text-center mb-12 md:mb-16 italic text-secondary text-2xl md:text-5xl">
@@ -513,6 +425,37 @@ export default function Home() {
                   </div>
                   <p className="text-center text-lg text-secondary font-bold mb-2 uppercase">
                     Patrick Smets - CEO GemOne
+                  </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="w-full lg:h-[600px]">
+                  <div className="max-w-[300px] md:max-w-[1000px] mx-auto">
+                    <p className="text-center mb-12 md:mb-16 text-secondary italic text-2xl md:text-5xl">
+                      &ldquo;Black Hippo slaagt erin om de verschillende
+                      cloudcomponenten te integreren tot 1 werkende
+                      architectuur, met een heel sterk security-beleid&rdquo;
+                    </p>
+                  </div>
+                  <div className="max-w-[300px] md:max-w-[700px] mx-auto">
+                    <Text className="text-center mb-2">
+                      &ldquo;Tom heeft enorm veel ervaring in cloudomgevingen.
+                      Hij slaagt erin om de verschillende cloudcomponenten te
+                      integreren tot 1 werkende architectuur, met een heel sterk
+                      security-beleid zowel op het vlak van data als van de
+                      applicatie zelf. Tom leert continu bij en is op de hoogte
+                      van de nieuwste technologische ontwikkelingen. Hij legt de
+                      lat zeer hoog, voor zichzelf en voor de software die we
+                      opleveren. Voor Tom is software meer dan de gevraagde
+                      functionaliteit alleen. De kwaliteit, performantie en
+                      beveiliging ervan zijn minstens even belangrijk. Het
+                      totaalplaatje moet kloppen. Ook de manier waarop we
+                      software ontwikkelen tracht hij voortdurend te
+                      verbeteren.&rdquo;
+                    </Text>
+                  </div>
+                  <p className="text-center text-lg  font-bold mb-2 uppercase">
+                    Kalman Tiboldi - CTO GemOne
                   </p>
                 </div>
               </SwiperSlide>
