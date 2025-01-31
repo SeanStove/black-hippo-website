@@ -101,19 +101,19 @@ export default function Home() {
               We helpen onze klanten om hun doelen te bereiken
             </Title>
           </div>
-          <ul className="sm:flex flex-wrap lg:flex-nowrap justify-center gap-x-14 mt-20">
-            <li className="mb-20">
-              <div className="h-[180px] flex items-end mb-4">
+          <ul className="sm:flex flex-wrap lg:flex-nowrap justify-center gap-x-40 mt-20">
+            <li className="mb-20 shadow-lg rounded-xl bg-white p-8">
+              <div className="h-[180px] flex items-center mb-4">
                 <Image
                   width={140}
                   height={143}
                   src="/assets/software-development.svg"
                   alt="Software Development"
+                  className="mx-auto"
                 />
               </div>
-              <div className="max-w-[200px] lg:max-w-[400px] ">
-                <p className="text-base color-secondary mb-2">01</p>
-                <h3 className="text-2xl text-primary mb-4">
+              <div className="lg:max-w-[500px] ">
+                <h3 className="text-2xl text-primary mt-8 mb-4">
                   Software Development
                 </h3>
                 <Text>
@@ -123,18 +123,18 @@ export default function Home() {
                 </Text>
               </div>
             </li>
-            <li className="mb-20">
-              <div className="h-[180px] flex items-end mb-4">
+            <li className="mb-20 shadow-lg rounded-xl bg-white p-8">
+              <div className="h-[180px] flex items-center mb-4">
                 <Image
                   width={130}
                   height={179}
                   src="/assets/consulting-service.svg"
                   alt="Consulting Service"
+                  className="mx-auto"
                 />
               </div>
-              <div className="max-w-[200px] lg:max-w-[400px]">
-                <p className="text-base color-secondary mb-2">02</p>
-                <h3 className="text-2xl text-primary mb-4">
+              <div className="lg:max-w-[500px]">
+                <h3 className="text-2xl text-primary mt-8 mb-4">
                   Consulting Service
                 </h3>
                 <Text>
