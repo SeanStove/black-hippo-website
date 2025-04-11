@@ -75,8 +75,8 @@ export default function PrivacyVerklaring() {
               <p>
                 Deze Privacyverklaring is van toepassing op de verwerking en
                 doorgifte van Persoonsgegevens door Black Hippo BV met
-                maatschappelijke zetel te Kruisstraat 7, 9120 Haasdonk, met
-                ondernemingsnummer 0742.699.306, RPR Gent afdeling Dendermonde,
+                maatschappelijke zetel te Odiel Spruyttestraat 2, 8870 Izegem,
+                met ondernemingsnummer 0775.557.164, RPR Gent afdeling Kortrijk,
                 via de Website. Door onze Website te gebruiken, het beroep doen
                 op de diensten van BHO en uw Persoonsgegevens mee te delen, gaat
                 u uitdrukkelijk akkoord met de wijze waarop wij uw

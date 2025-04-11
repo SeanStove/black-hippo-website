@@ -32,7 +32,7 @@ export function Footer() {
                 <li>Odiel spruyttestraat 2</li>
                 <li>8870 Izegem</li>
                 <li>info@blackhippo.be</li>
-                <li>BTW: BE 0742.699.306</li>
+                <li>BTW: BE 0775.557.164</li>
               </ul>
             </div>
             <div className="mt-16 lg:mt-0 w-[120px]">
